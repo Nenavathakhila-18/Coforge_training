@@ -51,7 +51,6 @@ INSERT INTO Attendance VALUES
 
 -- basic queries 
 select * from employee
-SELECT Empname,Salary from employee
 select Empname,Salary from employee where Salary > 50000;
 select Empname,Age from employee where Age > 30;
 
