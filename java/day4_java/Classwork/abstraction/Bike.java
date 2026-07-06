@@ -1,0 +1,9 @@
+package com.coforge.day4.abstraction;
+
+public class Bike extends TwoWheeler {
+	public void brandName () {
+		System.out.println("Brand name honda");
+	}
+	
+	
+}
