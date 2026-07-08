@@ -1,0 +1,20 @@
+		.logindiv{
+			border : 2px dotted green;
+			width : 250px;
+			color : red;
+			border-radius:10px;
+			position: absolute;
+			top:350px;
+			left: 550px;
+		}
+		
+		.loginbutton{
+			border : none;
+			background : pink;
+			color : red;
+			border-radius: 10px;
+			cursor: pointer;
+			
+		}
+
+
