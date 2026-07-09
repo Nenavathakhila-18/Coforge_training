@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOCUMENT OBJECT MODEL</title>
+<script type="text/javascript">
+	function ChangeText() {
+		document.getElementById("heading").innerHTML = "Welcome";
+	}
+	function changeBackground() {
+		document.body.style.backgroundColor = "yellow";
+	}
+	function changeImage() {
+		document.getElementById("Image").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvMFDtJFJLzEYY5bLQhfUwWBljfDu4l0qhnyOhkya1SOWltYgSZQ11eU&s=10";
+	}
+	function hideParagraph() {
+	    document.getElementById("para").style.display = "none";
+	}
+	function showParagraph() {
+	    document.getElementById("para").style.display = "block";
+	}
+	function increaseFont() {
+	    document.getElementById("para1").style.fontSize = "30px";
+	}
+</script>
+</head>
+<body>
+	<h1 id="heading">Hello</h1>
+	<button onclick="ChangeText()">Click me</button>
+	<br />
+	<br />
+	<button onclick="changeBackground()">Click here to change the
+		background</button>
+	<br>
+	<br>
+	<img id="Image"
+		src="https://static.vecteezy.com/system/resources/thumbnails/055/621/001/small/closeup-portrait-of-a-young-woman-with-freckles-and-snow-on-her-face-surrounded-by-pine-branches-photo.jpg"
+		width="300" onclick="changeImage()">
+	<br>
+	<br>
+
+	<p id="para">This is a paragraph.</p>
+	<button onclick="showParagraph()">Show Paragraph</button>
+	<button onclick="hideParagraph()">Hide Paragraph</button>
+	<br>
+	<br>
+	<p id="para1">Welcome to JavaScript DOM Programming.</p>
+	<button onclick="increaseFont()">Increase Font Size</button>
+</body>
+</html>

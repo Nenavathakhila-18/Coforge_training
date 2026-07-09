@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function add(a = 10, b = 20){
+	console.log(a+b);
+}
+
+add();
+add(100);
+add(100,200);
+
+function add1(a, b, ...args){
+	console.log(a+b);
+	let total = 0;
+	for(let n of args){
+		total = total + n;
+	}
+	console.log(total);
+}
+
+const odd = [1,2,3];
+const combined = [2,4,6, ...odd];
+console.log(combined);
+add1(100,200,10,20,30);
+
+//Array destructuring
+let arr = [10,20,30,40,50];
+let[x,y,z] = arr;
+console.log(x);//10
+console.log(y);//20
+console.log(z);//30
+
+let[a,b,c,...args]=arr;
+console.log(args);//[40,50]
+
+//object destructuring
+let person ={
+		firstname : 'Akhila',
+		lastname : 'Nenavath'
+}
+let{ firstname:fname, lastname : lname } = person;
+
+	const add2 = (a, b) => a + b;
+	const welcome = (name) =>"welcome" +name;
+	
+	function myFunction(a,b){
+		console.log(add2(10,20));
+		console.log(welcome("Akhila"));
+	}
+
+</script>
+</head>
+<body onload="myFunction()">
+	
+</body>
+</html>
