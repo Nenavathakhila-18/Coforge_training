@@ -1,0 +1,9 @@
+package com.coforge.ems.exception;
+
+public class InvalidEmployeeObjectException extends Exception{
+	@Override
+	public String toString() {
+		return "Failed: Invalid Employee Details";
+	}
+
+}
